@@ -1,6 +1,6 @@
 import pytest
-from math_series.series import fibonacci
-from math_series.series import lucas
+from math_series.series import fibonacci, lucas, sum_series
+
 
 #order of imports: from package_name.module_name import function_name
 
@@ -49,3 +49,7 @@ def test_lucas_10():
     actual = lucas(10)
     expected = 123
     assert actual == expected
+
+
+def sum_series_exists():
+    assert sum_series(6) == 8
