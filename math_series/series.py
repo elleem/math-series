@@ -15,7 +15,7 @@ def fibonacci(n):
 def lucas(n):
     """
     Calculate n of the Lucas sequence.
-     :parm n of the index to calculate
+    :parm n of the index to calculate
     :return: the n of the index in the Lucas sequence.
     """
     if n < 0:
