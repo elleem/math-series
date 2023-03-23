@@ -30,8 +30,9 @@ def lucas(n):
 
 def sum_series(n, first=0, second=1):
     """
-    :parm
-    :return:
+    :parm Uses the Fibonacci and Lucas functions, as well as a new value to determine which element in the series to print.
+    :return:calling this function with no optional param will produce the Fibonacci series.
+    Calling this function with 2 and 1 will produce values from the Lucas series.
     """
     if first== 0 and second==1:
        return fibonacci(n)
