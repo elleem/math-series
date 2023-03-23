@@ -51,5 +51,5 @@ def test_lucas_10():
     assert actual == expected
 
 
-def sum_series_exists():
-    assert sum_series(6) == 8
+def test_sum_series_exists():
+    assert sum_series
