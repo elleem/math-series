@@ -50,6 +50,9 @@ def test_lucas_10():
     expected = 123
     assert actual == expected
 
-
+def test_lucas_negative():
+    actual = lucas(-1)
+    expected = None
+    assert actual == expected, f"Lucas of a negative number should return {expected}, but got {actual} instead."
 def test_sum_series_exists():
     assert sum_series

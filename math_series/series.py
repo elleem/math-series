@@ -18,21 +18,22 @@ def lucas(n):
      :parm n of the index to calculate
     :return: the n of the index in the Lucas sequence.
     """
-    if n == 0:
+    if n < 0:
+        return None
+    elif n == 0:
         return 2
     elif n == 1:
         return 1
     else:
         return lucas(n-1) + lucas(n-2)
 
-def sum_series(n):
-    pass
-#def sum_series(n, first=0, second=1):
+
+def sum_series(n, first=0, second=1):
     """
     :parm
     :return:
     """
-    #if first== 0 and second==1:
-       # return fibonacci(n)
-    #elif first == 2 and second ==1:
-       # return lucas(n)
+    if first== 0 and second==1:
+       return fibonacci(n)
+    elif first == 2 and second ==1:
+       return lucas(n)
